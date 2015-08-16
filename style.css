@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+/* ------------------------------------------------------------- common area*/
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ------------------------------------------------------------- header menu area 	*/
+.headerMenuWrapper .navbar{
+	margin: 0px;	
+	margin-bottom: 0px;
+	min-height: 0px;
+	}
+	
+.headerMenuWrapper .navbar-collapse {
+	padding: 0px;
+	}
+	
+.headerMenu li a{
+	border-right: 1px solid #C3C3C3;
+	line-height: 1;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+	
+.headerMenu li a:hover{
+	color: blue;
+	font-weight: bold;
+	
+	}	
+/* ------------------------------------------------------------- header sub menu with icon area 	*/
+
+
+.headerSubnav{
+	margin: 0 5px;	
+	margin-top: 10px;
+	border-top: 1px solid #C3C3C3;
+	border-bottom: 1px solid #C3C3C3;
+	}
+		
+.headerSubnav tr td{
+	min-width: 100px;
+	}	
+table .dropdown .btn{
+	padding: 2px 12px;	
+	}	
+.subMenu{
+	height: 25px;
+	margin: 0px auto;
+	padding: 0px 1%;
+	text-align: center; 
+	border-right: 1px solid #C3C3C3;
+	}	
+	
+.subMenu li{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	list-style: none;
+	margin: 0px 1px;	
+	}
+	
+.subMenu li a{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../images/icon.jpg) no-repeat center;	
+	background-size: 100%;
+	}	
+	
+.headerSubnav tr td .dropdown{
+	margin: 0 25%;	
+	}
+
+/* ------------------------------------------------------------- Content area wiht data table 	*/
+
+.contentBlock{
+	min-height: 250px;
+	border: 1px solid #C3C3C3;
+	margin-left: 25px;
+	margin-top: 15px;
+	}
+	
+.text .col-xs-5{
+	border: none;
+	margin-left: 5px;
+	padding: 5px 0;
+	}
+	
+.contentBlock .row .col-xs-4{
+	border-right: 1px solid #DCDCDC;
+	}
+	
+.contentBlock .row .col-xs-4:last-child{
+	border-right: none;
+	}
+	
+.contentBlock .row{
+	border-bottom: 1px solid #DCDCDC;
+	}
+		
+.contentBlock .glyphicon{
+	margin: 0 10px;
+	}
+	
+.contentArea .container-fluid .row .col-md-6{
+	border: 1px solid #C3C3C3;
+	margin: 0 5px;
+	}
+
+.contentHeader{
+	background: #62A2E5;
+	font-weight: bold;	
+	}
