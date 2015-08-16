@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>requirement</title>
+    
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+     <!-- custome css link -->
+    <link rel="stylesheet" href="css/style.css"/> 
+
+</head>
+
+<body>
+    <header class="headerMenuWrapper">
+   		<!-- header menu area -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid"> 
+            <ul class="nav navbar-nav headerMenu">
+                <li> <a href="#">App.Profiles</a> </li>
+                <li><a href="#">User Groups</a> </li>           
+             </ul>  
+           </div>
+        </nav>
+<!--  header sub menu with icon area -->               
+      <div class="container-fluid headerSubnav">
+            <table class="">
+                  <tr>
+                      <td>
+                          <ul class="clearfix subMenu">
+                              <li><a href="#"></a></li> 
+                              <li><a href="#"></a></li> 
+                              <li><a href="#"></a></li> 
+                          </ul> 
+                      </td>
+                      <td>
+                          <ul class="clearfix subMenu">
+                              <li><a href="#"></a></li> 
+                              <li><a href="#"></a></li> 
+                              <li><a href="#"></a></li> 
+                          </ul> 
+                      </td>
+                      <td>
+                          <ul class="clearfix subMenu">
+                              <li><a href="#"></a></li> 
+                              <li><a href="#"></a></li> 
+                              <li><a href="#"></a></li> 
+                          </ul> 
+                      </td>
+                            
+                     <!-- dropdown menu-->
+                      <td>                
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                              CRC
+                              <span class="caret"></span>
+                            </button>
+                                  
+                            <ul class="dropdown-menu">
+                              <li><a href="#">CRC</a></li>
+                              <li><a href="#">CRC</a></li>
+                              <li><a href="#">CRC</a></li>
+                            </ul>
+                          </div>                    
+                      </td>
+                  </tr>
+        </table>  
+      </div> 
+	</header>
+	<!--  end of header -->
+    
+    
+    <!--  Content area wiht data table -->
+    
+    <main class="contentArea">
+        <div class="container-fluid">
+        
+          <div class="row"> 
+          <!-- content area row-1 block-1 -->
+            <div class="col-sm-5 contentBlock">
+            	<div class="row contentHeader text-uppercase strong">
+                    <div class="col-xs-12 text-center">Profile Name
+                    </div>
+                </div>
+                
+              <!--  Dynamic row content-->
+                <div class="row">
+                    <div class="col-xs-12"> <span class="glyphicon glyphicon-folder-open"></span> Default </div>
+                </div>
+                <div class="row">
+                   <div class="col-xs-12"> <span class="glyphicon glyphicon-folder-open"></span> CRC Drill down edit </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"> <span class="glyphicon glyphicon-folder-open"></span> CRS Hierarchy </div>
+                </div>
+           </div>
+            
+           <!-- content area row-1 block-2 -->
+           <div class="col-sm-5 contentBlock">
+                <div class="row  contentHeader text-uppercase strong">
+                    <div class="col-xs-4">Group Name
+                    </div>
+                    <div class="col-xs-4">Type
+                    </div>
+                    <div class="col-xs-4">Name
+                    </div>
+                </div>
+                
+                <!--  Dynamic row content-->
+                <div class="row">
+                    <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> Custome </div>
+                    <div class="col-xs-4"> Name </div>
+                </div>
+                 <div class="row">
+                    <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> Custome </div>
+                    <div class="col-xs-4"> Name </div>
+                </div>
+                 <div class="row">
+                    <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> Custome </div>
+                    <div class="col-xs-4"> Name </div>
+                </div>
+            </div>            
+          </div>
+          
+          
+		
+        
+        <!-- 2nd row for dynamic content -->
+          <div class="row">
+          
+          
+          <!-- content area row-2 block-3 -->
+            <div class="col-sm-5 contentBlock">          		
+                
+               <div class="row text">
+                 <div class="col-xs-5">Roles:</div>
+               </div>                
+                
+           	  <div class="row  contentHeader text-uppercase strong">
+                    <div class="col-xs-4">Role Name
+                </div>
+                    <div class="col-xs-4">Type
+                    </div>
+                    <div class="col-xs-4">Access
+                    </div>
+                </div>
+                
+              <!--  Dynamic row content -->
+                <div class="row">
+                  <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> S </div>
+                    <div class="col-xs-4"> <input type="checkbox"> </div>
+                </div>
+                 <div class="row">
+                    <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> S </div>
+                    <div class="col-xs-4"> <input type="checkbox"> </div>
+                </div>
+                 <div class="row">
+                    <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> S </div>
+                   <div class="col-xs-4"> <input type="checkbox"> </div>
+                </div>
+                
+           </div>
+            
+            	
+           <!-- content area row-2 block-4 -->
+           <div class="col-sm-5 contentBlock">
+           
+           		<div class="row text">
+                 <div class="col-xs-5">Selected Group:</div>
+               </div>
+                
+                <div class="row  contentHeader text-uppercase strong">
+                    <div class="col-xs-4">Group Name
+                    </div>
+                    <div class="col-xs-4">Type
+                    </div>
+                    <div class="col-xs-4">Name
+                    </div>
+                </div>
+                
+                <!--  Dynamic row content -->
+                <div class="row">
+                    <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> Custome </div>
+                    <div class="col-xs-4"> Name </div>
+                </div>
+                 <div class="row">
+                    <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> Custome </div>
+                    <div class="col-xs-4"> Name </div>
+                </div>
+                 <div class="row">
+                    <div class="col-xs-4"> CRS Sorce card </div>
+                    <div class="col-xs-4"> Custome </div>
+                    <div class="col-xs-4"> Name </div>
+                </div>
+            </div>            
+          </div>
+          
+      </div>
+    </main>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
