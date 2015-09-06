@@ -1,227 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>requirement</title>
-    
-    
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        
-     <!-- custome css link -->
-    <link rel="stylesheet" href="css/style.css"/> 
+<style> 
+
+#main {
+      height: 500px;
+      border: 1px solid black;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      }
+
+#one {
+    -webkit-flex: 2;  /* Safari 6.1+ */
+    flex-direction:column;
+}
+
+#two, #three{
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    ;
+}
+
+
+.container {
+  display: -webkit-flex;
+          }
+
+nav {
+  width: 200px;
+  background: red;
+}
+
+.flex-column {
+  -webkit-flex: 1;
+  background: blue;
+          }
+
+section{
+  border: 5px solid pink;
+  margin: 10px;
+}
+
+</style>
 
 </head>
-
 <body>
-    <header class="headerMenuWrapper">
-   		<!-- header menu area -->
-        <nav class="navbar navbar-default">
-          <div class="container-fluid"> 
-            <ul class="nav navbar-nav headerMenu">
-                <li> <a href="#">App.Profiles</a> </li>
-                <li><a href="#">User Groups</a> </li>           
-             </ul>  
-           </div>
-        </nav>
-<!--  header sub menu with icon area -->               
-      <div class="container-fluid headerSubnav">
-            <table class="">
-                  <tr>
-                      <td>
-                          <ul class="clearfix subMenu">
-                              <li><a href="#"></a></li> 
-                              <li><a href="#"></a></li> 
-                              <li><a href="#"></a></li> 
-                          </ul> 
-                      </td>
-                      <td>
-                          <ul class="clearfix subMenu">
-                              <li><a href="#"></a></li> 
-                              <li><a href="#"></a></li> 
-                              <li><a href="#"></a></li> 
-                          </ul> 
-                      </td>
-                      <td>
-                          <ul class="clearfix subMenu">
-                              <li><a href="#"></a></li> 
-                              <li><a href="#"></a></li> 
-                              <li><a href="#"></a></li> 
-                          </ul> 
-                      </td>
-                            
-                     <!-- dropdown menu-->
-                      <td>                
-                          <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                              CRC
-                              <span class="caret"></span>
-                            </button>
-                                  
-                            <ul class="dropdown-menu">
-                              <li><a href="#">CRC</a></li>
-                              <li><a href="#">CRC</a></li>
-                              <li><a href="#">CRC</a></li>
-                            </ul>
-                          </div>                    
-                      </td>
-                  </tr>
-        </table>  
-      </div> 
-	</header>
-	<!--  end of header -->
-    
-    
-    <!--  Content area wiht data table -->
-    
-    <main class="contentArea">
-        <div class="container-fluid">
-        
-          <div class="row"> 
-          <!-- content area row-1 block-1 -->
-            <div class="col-sm-5 contentBlock">
-            	<div class="row contentHeader text-uppercase strong">
-                    <div class="col-xs-12 text-center">Profile Name
-                    </div>
-                </div>
-                
-              <!--  Dynamic row content-->
-                <div class="row">
-                    <div class="col-xs-12"> <span class="glyphicon glyphicon-folder-open"></span> Default </div>
-                </div>
-                <div class="row">
-                   <div class="col-xs-12"> <span class="glyphicon glyphicon-folder-open"></span> CRC Drill down edit </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12"> <span class="glyphicon glyphicon-folder-open"></span> CRS Hierarchy </div>
-                </div>
-           </div>
-            
-           <!-- content area row-1 block-2 -->
-           <div class="col-sm-5 contentBlock">
-                <div class="row  contentHeader text-uppercase strong">
-                    <div class="col-xs-4">Group Name
-                    </div>
-                    <div class="col-xs-4">Type
-                    </div>
-                    <div class="col-xs-4">Name
-                    </div>
-                </div>
-                
-                <!--  Dynamic row content-->
-                <div class="row">
-                    <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> Custome </div>
-                    <div class="col-xs-4"> Name </div>
-                </div>
-                 <div class="row">
-                    <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> Custome </div>
-                    <div class="col-xs-4"> Name </div>
-                </div>
-                 <div class="row">
-                    <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> Custome </div>
-                    <div class="col-xs-4"> Name </div>
-                </div>
-            </div>            
-          </div>
-          
-          
-		
-        
-        <!-- 2nd row for dynamic content -->
-          <div class="row">
-          
-          
-          <!-- content area row-2 block-3 -->
-            <div class="col-sm-5 contentBlock">          		
-                
-               <div class="row text">
-                 <div class="col-xs-5">Roles:</div>
-               </div>                
-                
-           	  <div class="row  contentHeader text-uppercase strong">
-                    <div class="col-xs-4">Role Name
-                </div>
-                    <div class="col-xs-4">Type
-                    </div>
-                    <div class="col-xs-4">Access
-                    </div>
-                </div>
-                
-              <!--  Dynamic row content -->
-                <div class="row">
-                  <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> S </div>
-                    <div class="col-xs-4"> <input type="checkbox"> </div>
-                </div>
-                 <div class="row">
-                    <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> S </div>
-                    <div class="col-xs-4"> <input type="checkbox"> </div>
-                </div>
-                 <div class="row">
-                    <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> S </div>
-                   <div class="col-xs-4"> <input type="checkbox"> </div>
-                </div>
-                
-           </div>
-            
-            	
-           <!-- content area row-2 block-4 -->
-           <div class="col-sm-5 contentBlock">
-           
-           		<div class="row text">
-                 <div class="col-xs-5">Selected Group:</div>
-               </div>
-                
-                <div class="row  contentHeader text-uppercase strong">
-                    <div class="col-xs-4">Group Name
-                    </div>
-                    <div class="col-xs-4">Type
-                    </div>
-                    <div class="col-xs-4">Name
-                    </div>
-                </div>
-                
-                <!--  Dynamic row content -->
-                <div class="row">
-                    <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> Custome </div>
-                    <div class="col-xs-4"> Name </div>
-                </div>
-                 <div class="row">
-                    <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> Custome </div>
-                    <div class="col-xs-4"> Name </div>
-                </div>
-                 <div class="row">
-                    <div class="col-xs-4"> CRS Sorce card </div>
-                    <div class="col-xs-4"> Custome </div>
-                    <div class="col-xs-4"> Name </div>
-                </div>
-            </div>            
-          </div>
-          
-      </div>
-    </main>
 
+<div id="main">
+  <div style="background-color:coral;" id="one">RED</div>
+  <div style="background-color:lightblue;" id="two">BLUE</div>  
+  <div style="background-color:lightgreen;" id="three">Green div with more content.</div>
+</div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.2.min.js"></script>
+<div class="container">
+  <nav>
+      Home
+      Taco Menu
+      Draft List
+      Hours
+      Directions
+      Contact
+  </nav>
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.js"></script>
+  <div class="flex-column">
+    <section >
+        Flexbox is so easy!
+    </section>
+
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </section>  
+  </div>
+</div>
+
 </body>
 </html>
