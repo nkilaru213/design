@@ -1,76 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style> 
-
-#main {
-      height: 500px;
-      border: 1px solid black;
-      display: -webkit-flex; /* Safari */
-      display: flex;
-      }
-
-#one {
-    -webkit-flex: 2;  /* Safari 6.1+ */
-    flex-direction:column;
-}
-
-#two, #three{
-    -webkit-flex: 1;  /* Safari 6.1+ */
-    ;
-}
-
-
-.container {
-  display: -webkit-flex;
-          }
-
-nav {
-  width: 200px;
-  background: red;
-}
-
-.flex-column {
-  -webkit-flex: 1;
-  background: blue;
-          }
-
-section{
-  border: 5px solid pink;
-  margin: 10px;
-}
-
-</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 
-<div id="main">
-  <div style="background-color:coral;" id="one">RED</div>
-  <div style="background-color:lightblue;" id="two">BLUE</div>  
-  <div style="background-color:lightgreen;" id="three">Green div with more content.</div>
-</div>
-
 <div class="container">
-  <nav>
-      Home
-      Taco Menu
-      Draft List
-      Hours
-      Directions
-      Contact
-  </nav>
+  <h2>Activate Modal with JavaScript</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" id="myBtn">Open Modal</button>
 
-  <div class="flex-column">
-    <section >
-        Flexbox is so easy!
-    </section>
-
-    <section>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-    </section>  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
   </div>
+  
 </div>
+
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+<script>
+        $("#myModal").draggable({
+      handle: ".modal-header"
+      }); 
+</script>  
+
+</body>
+</html>
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Dialog - Default functionality</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ 
+ <style type="text/css">
+
+ 	#dialog{
+ 		display: none;
+  }
+ 	.ui-dialog{
+    position: static !important;
+  }
+
+ 	.headerDialog button{
+ 		float: right;
+ 	}
+
+ 	h2{
+ 		margin:0px;
+ 		display: inline-block;
+ 	}
+
+  .ui-dialog-titlebar {
+    display: none;
+    }
+
+ </style>
+</head>
+<body>
+<button id="dilogSwitch" style="width:100px; height:30px"></button>
+
+<div id="dialog" style="width:300px; height:200px;background:#f2f2f2">	
+  <div class="headerDialog">
+    <h2>header</h2>
+    <button>close</button>
+  </div>
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+ 
+  <script>
+  $(function() {
+  	$("#dilogSwitch").click(function(){
+      $( "#dialog" ).fadeIn(500,function(){
+        $(this).dialog();
+      })
+  	})
+    
+  });
+  </script>
+
+  <script>
+        $("#dialog").draggable({
+      handle: ".headerDialog"
+      }); 
+  </script> 
+  
+  <script>
+        $(".headerDialog button").click(function(){
+        $( "#dialog" ).hide();
+    })
+  </script>  
 
 </body>
 </html>
