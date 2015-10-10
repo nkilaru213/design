@@ -9,7 +9,7 @@
       $table.data('sortFns', sortFns);
 
       $table.on("click.tableSort", "thead th", function() {
-          $(this).stupidsort();
+          $(this).table_Sort();
       });
     });
   };
@@ -17,7 +17,7 @@
 
   // Expects $("#mytable").tableSort() to have already been called.
   // Call on a table header.
-  $.fn.stupidsort = function(force_direction){
+  $.fn.table_Sort = function(force_direction){
     var $this_th = $(this);
     var th_index = 0; // we'll increment this soon
     var dir = $.fn.tableSort.dir;
