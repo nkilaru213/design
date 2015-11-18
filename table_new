@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <style type="text/css">
+    .tableContent table{
+       border: 1px solid #ddd !important;
+      }
+    .tableContent table>tbody>tr>td, table>tbody>tr>th, 
+    .tableContent table>tfoot>tr>td, table>tfoot>tr>th, 
+    .tableContent table>thead>tr>td, table>thead>tr>th {
+      padding: 8px;
+      line-height: 1.42857143;
+      border: 1px solid #ddd;
+      }
+    .tableContent table>thead>tr>th {
+       border: 1px solid #ddd !important;
+       border-bottom: 2px solid #ddd !important;
+      }
+    .inputContent{
+      width: 50%;
+      padding: 15px;
+      margin: 0px auto;
+      }
+    .inputContent input{
+      margin: 0px 10px;
+      padding: 3px 8px;
+      }
+    .tableContent .inputContent input[type=text]{
+      width: 250px;
+      }
+    .tableContent table>tbody>tr>td:first-child{
+      width: 6%;
+      }
+      
+  </style>
+
+</head>
+<body>
+
+  <div>
+    <div class="inputContent">
+      <input type="text"  id="text1" placeholder="text feild">
+      <input type="button" class="btn btn-primary" value="click" >
+    </div>
+
+    <div class="tableContent">
+      <table>
+        <thead>
+          <tr>
+            <th>SNO</th>
+            <th>File name</th>
+            <th>File path</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>somthing</td>
+            <td>somthing</td>
+            <td>somthing</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>somthing</td>
+            <td>somthing</td>
+            <td>somthing</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>somthing</td>
+            <td>somthing</td>
+            <td>somthing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+                          
+  
+</div>
+
+</body>
+</html>
